@@ -34,11 +34,10 @@ def main():
     script.add_action("update", MoveActorsAction())
     script.add_action("update", HandleCollisionsAction())
     script.add_action("output", DrawActorsAction(video_service))
-
+    
     director = Director(video_service)
     director.start_game(cast, script)
 
+
 if __name__ == "__main__":
     main()
-    
-    

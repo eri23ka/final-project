@@ -31,7 +31,7 @@ class Enemy(Actor):
         self._is_advanced = advanced
         self._movement = 'up' if random.randint(0, 8) > 4 else 'down'
         self._prepare_body()
-        self.set_velocity(Point(3, 0))
+        self.set_velocity(Point(1, 0))
 
     def get_core(self):
         return self._core
